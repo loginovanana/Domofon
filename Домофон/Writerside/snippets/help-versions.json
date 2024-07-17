@@ -1,4 +1,4 @@
 [
-    {"version":"7.0.2","url":"/docs/7.0.2/","isCurrent":false},
-    {"version":"8.0.1","url":"/docs/8.0.1","isCurrent":true}
+    {"version":"7.0.2","url":"/docs/7.0.2/","isCurrent":true},
+    {"version":"8.0.1","url":"/docs/8.0.1","isCurrent":false}
 ]
