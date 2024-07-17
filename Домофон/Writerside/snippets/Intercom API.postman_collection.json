@@ -1,0 +1,1361 @@
+{
+	"info": {
+		"_postman_id": "0c14cfc1-01e6-45b4-9983-64f2d2604b2f",
+		"name": "Intercom API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32857037",
+		"_collection_link": "https://asklarteh.postman.co/workspace/IP-Intercom-API~c516c5ab-db3d-4f59-a36f-195d4c52d46f/collection/25119926-0c14cfc1-01e6-45b4-9983-64f2d2604b2f?action=share&source=collection_link&creator=32857037"
+	},
+	"item": [
+		{
+			"name": "Appartments",
+			"item": [
+				{
+					"name": "All flats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/appartments",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"appartments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get apartment info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/appartments/11",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"appartments",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apartment info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aFlats\": \r\n    [\r\n        {\r\n            \"iAnalogCallAccess\": 1,\r\n            \"iAtAnalog\": 0,\r\n            \"iAtRing\": 0,\r\n            \"iAtVoip\": 0,\r\n            \"iDigitalAddress\": 12,\r\n            \"iExtAtVoip\": 0,\r\n            \"iFlatID\": 12,\r\n            \"iFlatType\": 0,\r\n            \"iHungVoltage\": 0,\r\n            \"iMatrixAddress\": 12,\r\n            \"iPanelAnalog\": 0,\r\n            \"iSpeakVoltage\": 0,\r\n            \"iUnlockVoltage\": 0,\r\n            \"iVoipCallAccess\": 1,\r\n            \"sVoipAddress\": \"sip:demonb@sip.linphone.org\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/appartments",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"appartments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete flat",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/appartments/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"appartments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Doors",
+			"item": [
+				{
+					"name": "All doors state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/doors",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"doors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1 door state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/doors/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"doors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2 door state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/doors/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"doors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "open door 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":  1,\r\n    \"open\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/doors",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"doors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "close door 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":  2,\r\n    \"open\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/doors",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"doors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "close door 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":  1,\r\n    \"open\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/doors",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"doors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "open door 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":  2,\r\n    \"open\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/doors",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"doors"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Keys",
+			"item": [
+				{
+					"name": "All keys info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/rfids",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"rfids"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "key ab752589 info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/rfids/7654",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"rfids",
+								"7654"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "key 1234567890 info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/rfids/ab7525",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"rfids",
+								"ab7525"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set keys info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"aKeys\" : \r\n    [\r\n        {\r\n            \"iFlatID\": 0,\r\n            \"iKeyType\": 0, \r\n            \"iSceneID\": 0, \r\n            \"iLockAccess\": 0,\r\n            \"sKeyUid\": \"DDCCBBAA\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/rfids",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"rfids"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete key",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/rfids/1234567890",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"rfids",
+								"1234567890"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Codes",
+			"item": [
+				{
+					"name": "All codes info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/codes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "code info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/codes/1234",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"codes",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set codes info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aCodes\" : \r\n    [\r\n        {\r\n            \"iFlatID\": 1,\r\n            \"iCodeType\": 0, \r\n            \"iSpecialMode\": 0,\r\n            \"sCodeID\": \"1234\"\r\n        },\r\n        {\r\n            \"iFlatID\": 2,\r\n            \"iCodeType\": 0, \r\n            \"iSpecialMode\": 0,\r\n            \"sCodeID\": \"234567\"\r\n        },\r\n        {\r\n            \"iFlatID\": 2,\r\n            \"iCodeType\": 0, \r\n            \"iSpecialMode\": 0,\r\n            \"sCodeID\": \"5231\"\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/codes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete code",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/codes/125589",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"codes",
+								"125589"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Snapshot",
+			"item": [
+				{
+					"name": "Snapshot",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/snapshot",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"snapshot"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Global config",
+			"item": [
+				{
+					"name": "Get all global configs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get global config  'info'",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/info",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get global config 'text'",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/text",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"text"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get global config  'timeouts'",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/timeouts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"timeouts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get global config  'volume'",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/volume",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"volume"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get global config 'special modes'",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/special_modes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"special_modes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get global config 'line state levels'",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/line_state_levels",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"line_state_levels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get global config 'default codes'",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/default_codes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"default_codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get global config 'dtmf codes'",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/dtmf_codes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"dtmf_codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get global config 'ip block'",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/ip_block",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"ip_block"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set global config 'text'",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oGConfigText\" : {\r\n        \"sIdle\"     : \"ПРОСТОЙ\",\r\n        \"sError\"    : \"ОШИБКА\",\r\n        \"sCall\"     : \"ВЫЗОВ\",\r\n        \"sComplete\" : \"ЗАВЕРШЕН\",\r\n        \"sTell\"     : \"ГОВОРИТЕ\",\r\n        \"sEnter\"    : \"ВХОДИТЕ\",\r\n        \"sAddAuto\"  : \"АВТОСБОР\",\r\n        \"sExit\"     : \"ВЫХОД\",\r\n        \"sEmpty\"    : \" \",\r\n        \"sOpen\"     : \"ОТКРЫТО\",\r\n        \"sAlert\"    : \"ВНИМАНИЕ\",\r\n        \"sReset\"    : \"СБРОС\"\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/text",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"text"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set global config 'timeouts'",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oGConfigTimeouts\" : {\r\n        \"iTimeoutMsHoldOpenDoorLock\" : 10000,\r\n        \"iTimeoutMsCallLine\"         : 100000,\r\n        \"iTimeoutMsLineTalking\"      : 600000,\r\n        \"iTimeoutMsReturnToIdle\"     : 100000,\r\n        \"iDefaultTimeoutMs\"          : 2000\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/timeouts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"timeouts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set global config 'volume'",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oGConfigVolume\" : {\r\n        \"iPanelBeepVolume\" : 51,\r\n        \"iLineBeepVolume\"  : 51,\r\n        \"iMicGainLevel\"    : 4,\r\n        \"iSpAttLevel\"      : 1\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/volume",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"volume"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set global config 'special modes'",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oGConfigSpecialModes\" : {\r\n        \"iPermanentLockOpen\" : 0,\r\n        \"iAllKeyOpenMode\"    : 0\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/special_modes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"special_modes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set global config 'line state levels'",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oGConfigLineStateLevels\" : {\r\n        \"iDefaultKzAdcLevel\"          : 7,\r\n        \"iDefaultBreakAdcLevel\"       : 35000,\r\n        \"iDefaultSpeakAdcLevel\"       : 2080,\r\n        \"iDefaultUnlockAdcLevel\"      : 2680,\r\n        \"iDefaultHungAdcLevel\"        : 850,\r\n        \"iAllowImprecisionSpeak\"      : 150,\r\n        \"iAllowImprecisionUnlock\"     : 200,\r\n        \"iAllowImprecisionHung\"       : 400,\r\n        \"iMinJumpValueToAnotherLevel\" : 330\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/line_state_levels",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"line_state_levels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set global config 'default codes'",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oGConfigDefaultCodes\" : {\r\n        \"sDefaultOpenDoorMagicCode\" : \"62492\",\r\n        \"sDefaultAddAutoKeysCode\"   : \"041807\",\r\n        \"sEnterTestMenuCode\"        : \"581427\",\r\n        \"sDefaultKeepOpenedCode\"    : \"212121\"\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/default_codes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"default_codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set global config 'dtmf codes'",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oGConfigDtmfCodes\" : {\r\n        \"sOpenDoor\" : \"12345\"\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/dtmf_codes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"dtmf_codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set global config 'ip block'",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oGConfigIPBlock\" : {\r\n        \"iTemperatureHeatOn\"          : -10,\r\n        \"iTemperatureHeatOff\"         : -20,\r\n        \"iTemperatureIPBlockPowerOn\"  : -10,\r\n        \"iTemperatureIPBlockPowerOff\" : -15\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/gconfig/ip_block",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"gconfig",
+								"ip_block"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SIP",
+			"item": [
+				{
+					"name": "Get SIP config",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/sip/config",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"sip",
+								"config"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set SIP config",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oSip\" : {\r\n        \"sUser\": \"alice\",\r\n        \"sPassword\": \"secret\",\r\n        \"sDomain\": \"example.com\",\r\n        \"sProxy\": \"\",\r\n        \"sRealm\": \"*\",\r\n        \"sProtocol\": \"udp\",\r\n        \"iPort\": 5060\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/sip/config",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"sip",
+								"config"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Firmware",
+			"item": [
+				{
+					"name": "Get MCU firmware update state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/firmware/mcu/update/state",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"firmware",
+								"mcu",
+								"update",
+								"state"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get MCU/CPU firmware version",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/firmware/version",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"firmware",
+								"version"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get MCU firmware version",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/firmware/mcu/version",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"firmware",
+								"mcu",
+								"version"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get CPU firmware version",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/firmware/cpu/version",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"firmware",
+								"cpu",
+								"version"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MCU firmware update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firmware",
+									"type": "file",
+									"src": "/C:/Users/urazi/Downloads/intercom_art_fw_release_hw_v3_18_20240301_115726.upd"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/firmware/mcu/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"firmware",
+								"mcu",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CPU firmware update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firmware",
+									"type": "file",
+									"src": "/home/demonb/work/larteh/ip-dom/soft/firmware/3.1.6.1/update_v3.1.6.1.img"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/firmware/cpu/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"firmware",
+								"cpu",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Emergency alert",
+			"item": [
+				{
+					"name": "Emergency alert upload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sound",
+									"type": "file",
+									"src": "/F:/Work/asklab/Projects/Lartech-IP/_NEW/[2024.03.12] ALSA/kratov16mono.wav"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/emergency_alert/upload/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"emergency_alert",
+								"upload",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Emergency alert remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/emergency_alert/upload/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"emergency_alert",
+								"upload",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Emergency alert state",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/emergency_alert",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"emergency_alert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Emergency alert stop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"alert_status\": false,\r\n    \"alarm_alert\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/emergency_alert",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"emergency_alert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get emergency alert volume",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/emergency_alert/volume",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"emergency_alert",
+								"volume"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Emergency alert start",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"alert_status\" : true,\r\n    \"alarm_alert\"  : \"alert_1.wav\",\r\n    \"alert_type\"   : \"speaker\",\r\n    \"timeout\"      : 0,\r\n    \"flat\"         : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/emergency_alert",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"emergency_alert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set emergency alert volume",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"iVolume\"         : 100,\r\n    \"iScheduleVolume\" : 50,\r\n    \"bScheduleStatus\" : false,\r\n    \"sScheduleTime\"   : \"00:00 - 10:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/emergency_alert/volume",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"emergency_alert",
+								"volume"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DTMF",
+			"item": [
+				{
+					"name": "Get DTMF method",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/intercom/dtmf/method",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"dtmf",
+								"method"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set DTMF method",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dtmf_method\" : \"rfc2833\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/intercom/dtmf/method",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"intercom",
+								"dtmf",
+								"method"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{admin_password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{admin_name}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

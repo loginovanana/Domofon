@@ -1,0 +1,35 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="vivid" data-primary-color="#647A89"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-06-19T17:04:15.8065721"><title>Чтение данных всех кодов | IP-Домофон. Внешний API</title><script type="application/json" id="virtual-toc-data">[{"id":"wazfhv_7","level":0,"title":"Формат запроса","anchor":"#wazfhv_7"},{"id":"wazfhv_19","level":0,"title":"Формат ответа","anchor":"#wazfhv_19"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b267/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Чтение данных всех кодов | IP-Домофон. Внешний API"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="IP-Домофон. Внешний API Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation//7.0.2/чтение-данных-всех-кодов.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Чтение данных всех кодов | IP-Домофон. Внешний API"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation//7.0.2/чтение-данных-всех-кодов.html#webpage",
+    "url": "writerside-documentation//7.0.2/чтение-данных-всех-кодов.html",
+    "name": "Чтение данных всех кодов | IP-Домофон. Внешний API",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "IP-Домофон. Внешний API Help"
+}</script><!-- End Schema.org --></head><body data-id="Чтение-данных-всех-кодов" data-main-title="Чтение данных всех кодов" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="API 7.0.2///Управление данными кодов доступа"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>IP-Домофон. Внешний API 7.0.2 Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Чтение-данных-всех-кодов" id="Чтение-данных-всех-кодов.md">Чтение данных всех кодов</h1><section class="chapter"><h2 id="wazfhv_7" data-toc="wazfhv_7">Формат запроса</h2><div class="table-wrapper"><table class="wide" id="wazfhv_9"><thead><tr class="ijRowHead" id="wazfhv_11"><th id="wazfhv_12"><p><span id="wazfhv_14"><font style="color:#0000ff">GET</font></span></p></th><th id="wazfhv_17"><p>URI: <code class="code" id="wazfhv_18">http://{{panel_address}}/api/v1.cgi/intercom/codes</code></p></th></tr></thead><tbody></tbody></table></div></section><section class="chapter"><h2 id="wazfhv_19" data-toc="wazfhv_19">Формат ответа</h2><section class="chapter"><h3 id="http-1-1-200-ok" data-toc="http-1-1-200-ok">HTTP/1.1 <span id="wazfhv_21"><font style="color:#7cfc00">200 OK</font></span> - пример успешного ответа.</h3><p id="wazfhv_22"><span id="wazfhv_23"><u><font style="color:#808080">application/json&gt;</font></u></span></p><div class="code-block" data-lang="json">
+{
+  &quot;iCodeType&quot;: 0,
+  &quot;iFlatID&quot;: 2,
+  &quot;iSpecialMode&quot;: 0,
+  &quot;sCodeID&quot;: &quot;234567&quot;
+},
+{
+&quot;iCodeType&quot;: 0,
+&quot;iFlatID&quot;: 2,
+&quot;iSpecialMode&quot;: 0,
+&quot;sCodeID&quot;: &quot;54321&quot;
+},
+{
+&quot;iCodeType&quot;: 204,
+&quot;iFlatID&quot;: 1,
+&quot;iSpecialMode&quot;: 1,
+&quot;sCodeID&quot;: &quot;123456&quot;
+}
+</div><div class="table-wrapper"><table class="wide" id="wazfhv_25"><thead><tr class="ijRowHead" id="wazfhv_26"><th id="wazfhv_27"><p>Атрибут</p></th><th id="wazfhv_28"><p>Описание</p></th><th id="wazfhv_29"><p>Тип данных</p></th></tr></thead><tbody><tr id="wazfhv_30"><td id="wazfhv_31"><p>iCodeType</p></td><td id="wazfhv_32"><p>Указывает на номер квартиры, к которой привязан ключ.</p></td><td id="wazfhv_33"><p>integer</p></td></tr><tr id="wazfhv_34"><td id="wazfhv_35"><p>iFlatID</p></td><td id="wazfhv_36"><p>Указывает на номер квартиры, к которой привязан код доступа.</p></td><td id="wazfhv_37"><p>integer</p></td></tr><tr id="wazfhv_38"><td id="wazfhv_39"><p>iSpecialMode</p></td><td id="wazfhv_40"><p>Обозначает специальный режим.</p></td><td id="wazfhv_41"><p>integer</p></td></tr><tr id="wazfhv_42"><td id="wazfhv_43"><p>sCodeID</p></td><td id="wazfhv_44"><p>Уникальный идентификатор кода.</p></td><td id="wazfhv_45"><p>string</p></td></tr></tbody></table></div></section></section><div class="last-modified">Last modified: 19 июня 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="удаление-rfid-ключа.html" class="navigation-links__prev">Удаление RFID ключа</a><a href="чтение-данных-одного-кода.html" class="navigation-links__next">Чтение данных одного кода</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b267/app.js"></script></body></html>

@@ -1,0 +1,17 @@
+{
+  "iAnalogCallAccess": 1,
+  "iAtAnalog": 555,
+  "iAtRing": 777,
+  "iAtVoip": 888,
+  "iDigitalAddress": 22,
+  "iExtAtVoip": 999,
+  "iFlatID": 22,
+  "iFlatType": 0,
+  "iHungVoltage": 0,
+  "iMatrixAddress": 22,
+  "iPanelAnalog": 666,
+  "iSpeakVoltage": 0,
+  "iUnlockVoltage": 0,
+  "iVoipCallAccess": 1,
+  "sVoipAddress": "sip:flat22@domain"
+}

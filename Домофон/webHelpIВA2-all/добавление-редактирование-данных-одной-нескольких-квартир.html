@@ -1,0 +1,56 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="vivid" data-primary-color="#647A89"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-06-19T17:04:15.7254593"><title>Добавление/редактирование данных одной/нескольких квартир | IP-Домофон. Внешний API</title><script type="application/json" id="virtual-toc-data">[{"id":"-7dloya_88","level":0,"title":"Формат запроса","anchor":"#-7dloya_88"},{"id":"-7dloya_101","level":0,"title":"Формат ответа","anchor":"#-7dloya_101"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b267/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Добавление/редактирование данных одной/нескольких квартир | IP-Домофон. Внешний API"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="IP-Домофон. Внешний API Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation//7.0.2/добавление-редактирование-данных-одной-нескольких-квартир.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Добавление/редактирование данных одной/нескольких квартир | IP-Домофон. Внешний API"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation//7.0.2/добавление-редактирование-данных-одной-нескольких-квартир.html#webpage",
+    "url": "writerside-documentation//7.0.2/добавление-редактирование-данных-одной-нескольких-квартир.html",
+    "name": "Добавление/редактирование данных одной/нескольких квартир | IP-Домофон. Внешний API",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "IP-Домофон. Внешний API Help"
+}</script><!-- End Schema.org --></head><body data-id="Добавление-редактирование-данных-одной-нескольких-квартир" data-main-title="Добавление/редактирование данных одной/нескольких квартир" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="API 7.0.2///Управление данными квартир"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>IP-Домофон. Внешний API 7.0.2 Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Добавление-редактирование-данных-одной-нескольких-квартир" id="Добавление-редактирование-данных-одной-нескольких-квартир.md">Добавление/редактирование данных одной/нескольких квартир</h1><section class="chapter"><h2 id="-7dloya_88" data-toc="-7dloya_88">Формат запроса</h2><div class="table-wrapper"><table class="wide" id="-7dloya_89"><thead><tr class="ijRowHead" id="-7dloya_91"><th id="-7dloya_93"><p><span id="-7dloya_94"><font style="color:#228b22">POST</font></span></p></th><th id="-7dloya_95"><p>URI: <code class="code" id="-7dloya_96">http://{{panel_address}}/api/v1.cgi/intercom/appartments</code></p></th></tr></thead><tbody></tbody></table></div><section class="chapter"><h3 id="-7dloya_97" data-toc="-7dloya_97">Тело запроса</h3><p id="-7dloya_98"><span id="-7dloya_99"><u><font style="color:#808080">application/json&gt;</font></u></span></p><div class="code-block" data-lang="json">
+{
+&quot;aFlats&quot;:
+[
+{
+&quot;iAnalogCallAccess&quot;: 1,
+&quot;iAtAnalog&quot;: 555,
+&quot;iAtRing&quot;: 777,
+&quot;iAtVoip&quot;: 888,
+&quot;iDigitalAddress&quot;: 22,
+&quot;iExtAtVoip&quot;: 999,
+&quot;iFlatID&quot;: 22,
+&quot;iFlatType&quot;: 0,
+&quot;iHungVoltage&quot;: 0,
+&quot;iMatrixAddress&quot;: 22,
+&quot;iPanelAnalog&quot;: 666,
+&quot;iSpeakVoltage&quot;: 0,
+&quot;iUnlockVoltage&quot;: 0,
+&quot;iVoipCallAccess&quot;: 1,
+&quot;sVoipAddress&quot;: &quot;sip:flat22@domain&quot;
+},
+{
+&quot;iAnalogCallAccess&quot;: 1,
+&quot;iAtAnalog&quot;: 555,
+&quot;iAtRing&quot;: 777,
+&quot;iAtVoip&quot;: 888,
+&quot;iDigitalAddress&quot;: 5,
+&quot;iExtAtVoip&quot;: 999,
+&quot;iFlatID&quot;: 5,
+&quot;iFlatType&quot;: 0,
+&quot;iHungVoltage&quot;: 0,
+&quot;iMatrixAddress&quot;: 5,
+&quot;iPanelAnalog&quot;: 666,
+&quot;iSpeakVoltage&quot;: 0,
+&quot;iUnlockVoltage&quot;: 0,
+&quot;iVoipCallAccess&quot;: 1,
+&quot;sVoipAddress&quot;: &quot;sip:flat5@domain&quot;
+}
+]
+}
+</div></section></section><section class="chapter"><h2 id="-7dloya_101" data-toc="-7dloya_101">Формат ответа</h2><section class="chapter"><h3 id="http-1-1-200-ok" data-toc="http-1-1-200-ok">HTTP/1.1 <span id="-7dloya_103"><font style="color:#7cfc00">200 OK</font></span> - пример успешного ответа.</h3><div class="table-wrapper"><table class="wide" id="-7dloya_104"><thead><tr class="ijRowHead" id="-7dloya_105"><th id="-7dloya_106"><p>Атрибут</p></th><th id="-7dloya_107"><p>Описание</p></th><th id="-7dloya_108"><p>Тип данных</p></th></tr></thead><tbody><tr id="-7dloya_109"><td id="-7dloya_110"><p>aFlats</p></td><td id="-7dloya_111"><p>Массив (список) объектов, каждый из которых представляет данные одной квартиры.</p></td><td id="-7dloya_112"><p>array</p></td></tr><tr id="-7dloya_113"><td id="-7dloya_114"><p>iAnalogCallAccess</p></td><td id="-7dloya_115"><p>Указывает на доступ к аналоговому звонку (1 - доступен, 0 - недоступен).</p></td><td id="-7dloya_116"><p>integer</p></td></tr><tr id="-7dloya_117"><td id="-7dloya_118"><p>iAtAnalog</p></td><td id="-7dloya_119"><p>Аналоговый адрес или идентификатор устройства, связанного с аналоговым звонком.</p></td><td id="-7dloya_121"><p>integer</p></td></tr><tr id="-7dloya_122"><td id="-7dloya_123"><p>iAtRing</p></td><td id="-7dloya_124"><p>Идентификатором устройства, отвечающего за звонок, или адресом звонка.</p></td><td id="-7dloya_125"><p>integer</p></td></tr><tr id="-7dloya_126"><td id="-7dloya_127"><p>iAtVoip</p></td><td id="-7dloya_128"><p>Адрес или идентификатор устройства, связанного с VoIP-звонком.</p></td><td id="-7dloya_129"><p>integer</p></td></tr><tr id="-7dloya_130"><td id="-7dloya_131"><p>iDigitalAddress</p></td><td id="-7dloya_132"><p>Цифровой адрес устройства или адрес канала связи.</p></td><td id="-7dloya_133"><p>integer</p></td></tr><tr id="-7dloya_134"><td id="-7dloya_135"><p>iExtAtVoip</p></td><td id="-7dloya_136"><p>Идентификатор внешнего устройства, участвующего в VoIP-звонке, или адрес внешнего звонка.</p></td><td id="-7dloya_137"><p>integer</p></td></tr><tr id="-7dloya_138"><td id="-7dloya_139"><p>iFlatID</p></td><td id="-7dloya_140"><p>Номер квартиры.</p></td><td id="-7dloya_141"><p>integer</p></td></tr><tr id="-7dloya_142"><td id="-7dloya_143"><p>iFlatType</p></td><td id="-7dloya_144"><p>Тип помещения (0 - неизвестный, 1 - квартира, 2 - офис, и т.д.).</p></td><td id="-7dloya_145"><p>integer</p></td></tr><tr id="-7dloya_146"><td id="-7dloya_147"><p>iHungVoltage</p></td><td id="-7dloya_148"><p>Значение напряжения, которое используется для определения состояния устройства (0 - нормальное напряжение, 1 - низкое напряжение, и т.д.).</p></td><td id="-7dloya_149"><p>integer</p></td></tr><tr id="-7dloya_150"><td id="-7dloya_151"><p>iMatrixAddress</p></td><td id="-7dloya_152"><p>Адрес устройства в матрице системы управления доступом или коммуникации.</p></td><td id="-7dloya_153"><p>integer</p></td></tr><tr id="-7dloya_154"><td id="-7dloya_155"><p>iPanelAnalog</p></td><td id="-7dloya_156"><p>Идентификатор аналогового модуля или панели.</p></td><td id="-7dloya_157"><p>integer</p></td></tr><tr id="-7dloya_158"><td id="-7dloya_159"><p>iSpeakVoltage</p></td><td id="-7dloya_160"><p>Значение напряжения, которое используется для активации функции &ldquo;говорю&rdquo; (0 - выключено, 1 - включено).</p></td><td id="-7dloya_161"><p>integer</p></td></tr><tr id="-7dloya_162"><td id="-7dloya_163"><p>iUnlockVoltage</p></td><td id="-7dloya_164"><p>Значение напряжения, которое используется для разблокировки двери или системы доступа (0 - выключено, 1 - включено).</p></td><td id="-7dloya_165"><p>integer</p></td></tr><tr id="-7dloya_166"><td id="-7dloya_167"><p>iVoipCallAccess</p></td><td id="-7dloya_168"><p>Указывает на доступ к VoIP-звонку (1 - доступен, 0 - недоступен).</p></td><td id="-7dloya_169"><p>integer</p></td></tr><tr id="-7dloya_170"><td id="-7dloya_171"><p>sVoipAddress</p></td><td id="-7dloya_172"><p>IP-адрес или URL, используемый для установления VoIP-звонка.</p></td><td id="-7dloya_173"><p>string</p></td></tr></tbody></table></div></section></section><div class="last-modified">Last modified: 19 июня 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="чтение-данных-одной-квартиры.html" class="navigation-links__prev">Чтение данных одной квартиры</a><a href="чтение-данных-всех-квартир.html" class="navigation-links__next">Чтение данных всех квартир</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b267/app.js"></script></body></html>

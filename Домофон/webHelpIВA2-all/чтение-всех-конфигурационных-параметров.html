@@ -1,0 +1,81 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="vivid" data-primary-color="#647A89"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-06-19T17:04:15.718448"><title>Чтение всех конфигурационных параметров | IP-Домофон. Внешний API</title><script type="application/json" id="virtual-toc-data">[{"id":"-gjuvaf_55","level":0,"title":"Формат запроса","anchor":"#-gjuvaf_55"},{"id":"-gjuvaf_70","level":0,"title":"Формат ответа","anchor":"#-gjuvaf_70"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b267/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Чтение всех конфигурационных параметров | IP-Домофон. Внешний API"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="IP-Домофон. Внешний API Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation//7.0.2/чтение-всех-конфигурационных-параметров.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Чтение всех конфигурационных параметров | IP-Домофон. Внешний API"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation//7.0.2/чтение-всех-конфигурационных-параметров.html#webpage",
+    "url": "writerside-documentation//7.0.2/чтение-всех-конфигурационных-параметров.html",
+    "name": "Чтение всех конфигурационных параметров | IP-Домофон. Внешний API",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "IP-Домофон. Внешний API Help"
+}</script><!-- End Schema.org --></head><body data-id="Чтение-всех-конфигурационных-параметров" data-main-title="Чтение всех конфигурационных параметров" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="API 7.0.2///Управление конфигурацией"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>IP-Домофон. Внешний API 7.0.2 Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Чтение-всех-конфигурационных-параметров" id="Чтение-всех-конфигурационных-параметров.md">Чтение всех конфигурационных параметров</h1><section class="chapter"><h2 id="-gjuvaf_55" data-toc="-gjuvaf_55">Формат запроса</h2><div class="table-wrapper"><table class="wide" id="-gjuvaf_58"><thead><tr class="ijRowHead" id="-gjuvaf_60"><th id="-gjuvaf_62"><p><span id="-gjuvaf_64"><font style="color:#0000ff">GET</font></span></p></th><th id="-gjuvaf_66"><p>URI: <code class="code" id="-gjuvaf_68">http://{{panel_address}}/api/v1.cgi/intercom/gconfig</code></p></th></tr></thead><tbody></tbody></table></div></section><section class="chapter"><h2 id="-gjuvaf_70" data-toc="-gjuvaf_70">Формат ответа</h2><section class="chapter"><h3 id="http-1-1-200-ok" data-toc="http-1-1-200-ok">HTTP/1.1 <span id="-gjuvaf_72"><font style="color:#7cfc00">200 OK</font></span> - пример успешного ответа.</h3><p id="-gjuvaf_53"><span id="-gjuvaf_52"><u><font style="color:#808080">application/json&gt;</font></u></span></p><div class="code-block" data-lang="json">
+{
+  &quot;oGConfigDefaultCodes&quot;: {
+    &quot;sDefaultAddAutoKeysCode&quot;: &quot;041807&quot;,
+    &quot;sDefaultKeepOpenedCode&quot;: &quot;162985&quot;,
+    &quot;sDefaultOpenDoorMagicCode&quot;: &quot;62492&quot;,
+    &quot;sEnterTestMenuCode&quot;: &quot;581427&quot;
+  },
+  &quot;oGConfigDtmfCodes&quot;: {
+    &quot;sOpenDoor&quot;: &quot;14379&quot;
+  },
+  &quot;oGConfigIPBlock&quot;: {
+    &quot;iTemperatureHeatOff&quot;: -10,
+    &quot;iTemperatureHeatOn&quot;: -20,
+    &quot;iTemperatureIPBlockPowerOff&quot;: -128,
+    &quot;iTemperatureIPBlockPowerOn&quot;: -20
+  },
+  &quot;oGConfigInfo&quot;: {
+    &quot;iCRC&quot;: 4294967295,
+    &quot;iLength&quot;: 344,
+    &quot;sVersion&quot;: &quot;CFG v0.0.2&quot;
+  },
+  &quot;oGConfigLineStateLevels&quot;: {
+    &quot;iAllowImprecisionHung&quot;: 400,
+    &quot;iAllowImprecisionSpeak&quot;: 150,
+    &quot;iAllowImprecisionUnlock&quot;: 200,
+    &quot;iDefaultBreakAdcLevel&quot;: 3500,
+    &quot;iDefaultHungAdcLevel&quot;: 850,
+    &quot;iDefaultKzAdcLevel&quot;: 7,
+    &quot;iDefaultSpeakAdcLevel&quot;: 2080,
+    &quot;iDefaultUnlockAdcLevel&quot;: 2680,
+    &quot;iMinJumpValueToAnotherLevel&quot;: 310
+  },
+  &quot;oGConfigSpecialModes&quot;: {
+    &quot;iAllKeyOpenMode&quot;: 0,
+    &quot;iPermanentLockOpen&quot;: 3
+  },
+  &quot;oGConfigText&quot;: {
+    &quot;sAddAuto&quot;: &quot;АВТОСБОР&quot;,
+    &quot;sAlert&quot;: &quot;ВНИМАНИЕ&quot;,
+    &quot;sCall&quot;: &quot; ВЫЗОВ&quot;,
+    &quot;sComplete&quot;: &quot;ЗАВЕРШЕН&quot;,
+    &quot;sEmpty&quot;: &quot; &quot;,
+    &quot;sEnter&quot;: &quot; ВХОДИТЕ&quot;,
+    &quot;sError&quot;: &quot; ОШИБКА &quot;,
+    &quot;sExit&quot;: &quot; ВЫХОД&quot;,
+    &quot;sIdle&quot;: &quot; ДОМ_РУ&quot;,
+    &quot;sOpen&quot;: &quot; ОТКРЫТО&quot;,
+    &quot;sReset&quot;: &quot; СБРОС&quot;,
+    &quot;sTell&quot;: &quot;ГОВОРИТЕ&quot;
+  },
+  &quot;oGConfigTimeouts&quot;: {
+    &quot;iDefaultTimeoutMs&quot;: 2000,
+    &quot;iTimeoutMsCallLine&quot;: 10000,
+    &quot;iTimeoutMsHoldOpenDoorLock&quot;: 10000,
+    &quot;iTimeoutMsLineTalking&quot;: 30000,
+    &quot;iTimeoutMsReturnToIdle&quot;: 10000
+  },
+  &quot;oGConfigVolume&quot;: {
+    &quot;iLineBeepVolume&quot;: 51,
+    &quot;iMicGainLevel&quot;: 4,
+    &quot;iPanelBeepVolume&quot;: 51,
+    &quot;iSpAttLevel&quot;: 4
+  }
+}
+</div></section></section><div class="last-modified">Last modified: 19 июня 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="установка-состояния-двери.html" class="navigation-links__prev">Установка состояния двери</a><a href="чтение-заголовка-набора-конфигурационных-параметров.html" class="navigation-links__next">Чтение заголовка набора конфигурационных параметров</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b267/app.js"></script></body></html>

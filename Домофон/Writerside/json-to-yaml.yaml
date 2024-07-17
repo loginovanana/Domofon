@@ -1,0 +1,89 @@
+openapi: 3.0.3
+servers:
+  - url: v1
+info:
+  title: IntercomAPI
+
+  version: 7.0.2
+
+tags:
+  - name: Appartments
+    description: Everything about your Pets
+    externalDocs:
+      description:
+      url: 'http://{{panel_address}}/api/v1.cgi/intercom/appartments'
+      schema: 'https://schema.getpostman.com/json/collection/v2.1.0/collection.json'
+paths:
+  /http://{{panel_address}}/api/v1.cgi/intercom/appartments:
+    get:
+      tags:
+        - Appartments
+      summary: Чтение данных всех квартир
+      description: Считывает информацию обо всех квартирах
+      operationid:
+
+      responses:
+        '200 ОК':
+          description: Пример успешного ответа
+          content:
+            application/json:
+              schema:
+                $ref: '#/'
+    post:
+      tags:
+        - Appartments
+      summary: Добавление/редактирование одной/нескольких квартир
+      description: Изменение одной или нескольких квартир
+      operationId: изменение
+      requestBody:
+        description: Изменяет информацию об одной или нескольких квартирах
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pet'
+      responses:
+        '200 OK':
+          description: Пример успешного ответа
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+  /http://{{panel_address}}/api/v1.cgi/intercom/appartments/<flat_id>:
+    get:
+      tags:
+        - Appartments
+      summary: Чтение данных одной квартиры
+      description: Считывает информацию об одной квартире
+      operationid: чтение1
+      requestBody:
+        description: Считывает информацию об одной квартире
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Appartments'
+
+      responses:
+        '200 ОК':
+          description: Пример успешного ответа
+          content:
+            application/json:
+              schema:
+                $ref: '#/definitions/response'
+    delete:
+      tags:
+        -Appartments
+      summary: Удаление одной квартиры
+      description: Удаление информации об одной квартире
+      operationId: удаление
+
+
+      responses:
+        'HTTP/1.1 200 OK':
+          description: Пример успешного ответа
+        '401':
+          description: Unauthorized — для доступа к запрашиваемому ресурсу требуется аутентификация.
+        '404':
+          description: Not Found — сервер понял запрос, но не нашёл соответствующего ресурса по указанному URL.
+        '501':
+          description: Not Implemented — сервер не поддерживает возможностей, необходимых для обработки запроса.
+

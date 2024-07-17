@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="iвa"
+                 name="IP-Домофон. Внешний API"
+                 start-page="Введение.md">
+
+
+    <toc-element topic="Введение.md">
+        <toc-element topic="Коды-ошибок.md"/>
+    </toc-element>
+    <toc-element topic="Авторизация.md"/>
+    <toc-element toc-title="Обзор-ресурсов.md">
+        <toc-element topic="GET.md"/>
+        <toc-element topic="POST.md"/>
+        <toc-element topic="DELETE.md"/>
+    </toc-element>
+    <toc-element toc-title="API 7.0.2">
+        <toc-element toc-title="Системный API">
+            <toc-element topic="Чтение-информации-о-домофоне.md"/>
+            <toc-element topic="Перезагрузка-домофона.md"/>
+            <toc-element topic="Сброс-на-заводские-настройки.md"/>
+            <toc-element topic="Неполный-сброс.md"/>
+            <toc-element topic="Чтение-системного-времени.md"/>
+            <toc-element topic="Установка-системного-времени.md"/>
+            <toc-element topic="Чтение-настроек-syslog.md"/>
+            <toc-element topic="Установка-настроек-syslog.md"/>
+        </toc-element>
+        <toc-element topic="Получение-моментального-снимка-с-камеры.md"/>
+        <toc-element toc-title="Управление данными квартир">
+            <toc-element topic="Чтение-данных-одной-квартиры.md"/>
+            <toc-element topic="Добавление-редактирование-данных-одной-нескольких-квартир.md"/>
+            <toc-element topic="Чтение-данных-всех-квартир.md"/>
+            <toc-element topic="Удаление-одной-квартиры.md"/>
+        </toc-element>
+        <toc-element toc-title="Управление данными RFID ключей">
+            <toc-element topic="Чтение-данных-всех-RFID-ключей.md"/>
+            <toc-element topic="Чтение-данных-одного-RFID-ключа.md"/>
+            <toc-element topic="Добавление-редактирование-данных-об-одном-нескольких-ключах.md"/>
+            <toc-element topic="Удаление-RFID-ключа.md"/>
+        </toc-element>
+        <toc-element toc-title="Управление данными кодов доступа">
+            <toc-element topic="Чтение-данных-всех-кодов.md"/>
+            <toc-element topic="Чтение-данных-одного-кода.md"/>
+            <toc-element topic="Добавление-редактирование-данных-кодов.md"/>
+            <toc-element topic="Удаление-одного-кода.md"/>
+        </toc-element>
+        <toc-element toc-title="Управление данными дверей">
+            <toc-element topic="Чтение-состояния-всех-дверей.md"/>
+            <toc-element topic="Чтение-состояния-одной-двери.md"/>
+            <toc-element topic="Установка-состояния-двери.md"/>
+        </toc-element>
+        <toc-element toc-title="Управление конфигурацией">
+            <toc-element topic="Чтение-всех-конфигурационных-параметров.md"/>
+            <toc-element topic="Чтение-заголовка-набора-конфигурационных-параметров.md"/>
+            <toc-element topic="Таймауты.md"/>
+            <toc-element topic="Настройки-громкости.md"/>
+            <toc-element topic="Специальные-режимы.md"/>
+            <toc-element topic="Пороговые-уровни-напряжения-в-линии.md"/>
+            <toc-element topic="Сервисные-коды.md"/>
+            <toc-element topic="Температурные-уставки-IP-блока.md"/>
+            <toc-element topic="Коды-DTMF.md"/>
+            <toc-element topic="Текстовые-сообщения.md"/>
+        </toc-element>
+        <toc-element toc-title="Оповещение населения">
+            <toc-element topic="Загрузка-файла-записи.md"/>
+            <toc-element topic="Удаление-файла-записи.md"/>
+            <toc-element topic="Запуск-остановка-режима-оповещения.md"/>
+            <toc-element topic="Чтение-состояния-выполнения.md"/>
+            <toc-element topic="Чтение-настроек-громкости.md"/>
+            <toc-element topic="Запись-настроек-громкости.md"/>
+        </toc-element>
+        <toc-element topic="SIP.md"/>
+        <toc-element toc-title="Обновление">
+            <toc-element topic="Чтение-версий-прошивок.md"/>
+            <toc-element topic="Чтение-версий-прошивок-Artery.md"/>
+            <toc-element topic="Чтение-версии-прошивки-RockChip.md"/>
+            <toc-element topic="Обновление-прошивки-MCU-Artery.md"/>
+            <toc-element topic="Чтение-состояния-обновления-прошивки.md"/>
+            <toc-element topic="Обноваление-прошивки-CPU-RockChip.md"/>
+        </toc-element>
+        <toc-element toc-title="NTP">
+            <toc-element topic="Чтение-настроек-NTP.md"/>
+            <toc-element topic="Редактирование-настроек-NTP.md"/>
+            <toc-element topic="Чтение-зон-NTP.md"/>
+        </toc-element>
+        <toc-element toc-title="Настройки сети">
+            <toc-element topic="Чтение-всех-общих-настроек-сети.md"/>
+            <toc-element topic="Чтение-метода-получения-адреса.md"/>
+            <toc-element topic="Установка-метода-в-DHCP.md"/>
+            <toc-element topic="Установка-настроек-сети-при-методе-static.md">
+                <toc-element topic="Чтение-настроек-сети-при-методе-static.md"/>
+                <toc-element topic="Настройки-DNS.md"/>
+                <toc-element topic="Адрес-шлюза.md"/>
+            </toc-element>
+        </toc-element>
+        <toc-element topic="DTMF.md"/>
+        <toc-element topic="Ожидает-реализации.md"/>
+    </toc-element>
+
+    <toc-element topic="История-измений-API.md"/>
+</instance-profile>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <variables>
+        <header-logo>логотип.png</header-logo>
+        <custom-favicons>логотип.png</custom-favicons>
+        <product-web-url>https://lar.tech/</product-web-url>
+        <primary-color>metallic</primary-color>
+        <color-preset>vivid</color-preset>
+    </variables>
+
+    <build-profile instance="iвa">
+        <variables>
+            <noindex-content>true</noindex-content>
+        </variables>
+    </build-profile>
+    <footer>
+        <copyright>2016 - 2024 https://lar.tech Компания «Лартех». Все права защищены.</copyright>
+        <link href="https://lar.tech/support">Техническая поддержка</link>
+    </footer>
+</buildprofiles>
